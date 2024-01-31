@@ -1,0 +1,185 @@
+body {
+  width: 60%;
+  margin: 0px auto;
+  background-color: #fbfbfb;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+  
+}
+
+h2 {
+  background-color: #fabc60;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+/* .pending {
+  width: 45%;
+  padding: 10px;
+}
+
+
+.completed {
+  width: 45%;
+  padding: 10px;
+} */
+
+.pendingTask{
+  width: 50%;
+}
+
+.completedTask{
+  width: 50%;
+}
+
+.completedTask h2{
+  background-color: #388e3c;
+}
+.input {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8rem;
+}
+
+input[type="text"] {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-size: 2rem;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+.input p {
+  cursor: pointer;
+  margin-left: 2rem;
+}
+
+.task_bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  border: 1px solid black;
+  margin-bottom: 0.5em;
+  border-radius: 10px;
+}
+
+.title {
+  margin-left: 25px;
+  width: 85%;
+}
+
+.priority {
+  display: flex;
+  flex-direction: row;
+  border: none;
+  padding: 22px 22px 22px 22px;
+  gap: 5px;
+}
+
+.high {
+  width: 25px;
+  height: 25px;
+  background-color: #fe346e;
+}
+.high:hover {
+  background-color: rgb(214, 34, 34);
+}
+.medium {
+  width: 25px;
+  height: 25px;
+  background-color: #f1e7b6;
+}
+.medium:hover {
+  background-color: rgb(194, 194, 143);
+}
+.low {
+  width: 25px;
+  height: 25px;
+  background-color: #400082;
+}
+
+.low:hover {
+  background-color: rgb(38, 95, 230);
+  cursor: pointer;
+}
+
+.remove {
+  padding: 20px;
+  color: #c70039;
+  text-decoration: none;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.status {
+  margin-left: 10px;
+  height: 2rem;
+  width: 4rem;
+  /* background-color: rgb(214, 34, 34, 0.5); */
+  border: 1px solid black;
+  border-radius: 2rem;
+}
+
+.completed h2 {
+  background-color: #388e3c;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.done{
+  background-color: #388e3c;
+}
+@media (max-width: 1198px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+  .status {
+    margin-left: 10px;
+    height: 30px;
+    width: 70px;
+    /* background-color: rgb(214, 34, 34, 0.5); */
+  }
+}
+
+@media (max-width: 1178px) {
+  .status {
+    margin-top: 5px;
+    border-radius: 1rem;
+    /* display: none; */
+  }
+  .title p {
+    padding: 0.2rem;
+    text-align: center;
+    border-radius: 10px;
+    text-wrap: no-wrap;
+  }
+}
+
+@media (max-width: 1146px) {
+  .task_bar {
+    flex-direction: column;
+  }
+
+  .title {
+    margin-right: 1.5rem;
+  }
+}
